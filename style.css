@@ -16,7 +16,7 @@ body {
     box-shadow: 0 10px 0 rgba(0, 0, 0, .1);
     text-align: center;
     width: 100%;
-    max-width: 420px;
+    max-width: 500px;
     box-sizing: border-box;
     margin: 0 1rem;
 }
@@ -25,7 +25,7 @@ h1 {
     font-size: 1.5rem; /* rem is relative to root */
     /* font-weight: 1000; this is like boldness of text or thickness
     default value is 700 for h1*/
-
+    margin-top: -0.5rem;
 }
 
 p {
