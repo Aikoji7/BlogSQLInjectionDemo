@@ -3,25 +3,38 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/sql.js/1.10.3/sql-wasm.js"></script>
 
     <title>SQL Injection Test</title>
     <link rel="stylesheet" href="style.css">
 
+    <script src="login.js" defer></script>
+
 </head>
 <body>
-    <div class="initialpage">
-        <h1>LOGIN PAGE</h1>
-        <p>To simulate a totally accurate 100% real bank page ;D</p>
+    <div class="page-wrapper">
+        <div class="query-box" id="query-box">all SQL commands will be shown here ;) ps: try bob and pass</div>
+    
+        <div class="initialpage">
+            <h1>LOGIN PAGE</h1>
+            <p>To simulate a totally accurate 100% real bank page ;D</p>
 
-        <form class="actuallogin">
-            <label for="username">Login</label>
-            <input type="text" id="username" placeholder="Enter username">
+            <div id="error-box"></div>
 
-            <label for="password">Password</label>
-            <input type="password" id="password" placeholder="Enter password">
+            <form class="actuallogin" id="actuallogin">
+                <label for="username">Login</label>
+                <input type="text" id="username" placeholder="Enter username">
 
-            <button type="submit">Log In</button>
-        </form>
+                <label for="password">Password</label>
+                <input type="password" id="password" placeholder="Enter password">
+
+                <button type="submit">Log In</button>
+            </form>
+
+        </div>
     </div>
+    
+    
 </body>
 </html>
