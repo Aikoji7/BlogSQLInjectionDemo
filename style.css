@@ -1,0 +1,76 @@
+body {
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    background: #f1f2f3;
+    color: #111111;
+}
+
+.initialpage {
+    background: white;
+    padding: 3rem 3rem;
+    border-radius: 20px;
+    box-shadow: 0 10px 0 rgba(0, 0, 0, .1);
+    text-align: center;
+}
+
+h1 {
+    font-size: 1.5rem; /* rem is relative to root */
+    /* font-weight: 1000; this is like boldness of text or thickness
+    default value is 700 for h1*/
+
+}
+
+p {
+    color: #777777;
+}
+
+.actuallogin {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    gap: 0.4rem;
+    margin-top: 1.5rem;
+}
+
+.actuallogin label {
+    color: #111111;
+    font-weight: 500;
+    font-size: 1.2rem;
+    margin-top: 0.7rem;
+}
+
+.actuallogin input {
+    padding: 1rem 1rem;
+    border-radius: 10px;
+    border: 3px solid #dddddd;
+    font-size: 1rem;
+    outline: none; /* apparently broswers add auto black border on focused box so this allows custom stuff */
+    transition: border-color 0.5s ease;
+}
+
+.actuallogin input:focus { /* cool thing i found out its wheen u click the box*/
+    border-color: #22c55e;
+}
+
+.actuallogin button {
+    margin-top: 1.5rem;
+    padding: 1rem;
+    border-radius: 10px;
+    border: none; /* again default browser border / outline */
+    background: #22c55e;
+    color: white;
+    font-weight: 500;
+    font-size: 1rem;
+    cursor: pointer; /* this is important for making it look clickable */
+    box-shadow: 0 0 20px rgba(34, 197, 94, 0.6);
+    transition: box-shadow 0.5s ease, background 0.5s ease;
+}
+
+.actuallogin button:hover {
+    background: #16a34a;
+    box-shadow: 0 0 30px rgba(34, 197, 94, 0.85);
+}
